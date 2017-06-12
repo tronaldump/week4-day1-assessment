@@ -31,7 +31,7 @@ It should return new year's day for 2018.
 ( function() {
   "use strict";
 
-  var date = new Date("January, 1 2018");
+  var date = new Date("2018, 0, 1");
   var y = ("Happy new year! ")
 
 console.log( "Happy new year!: ", date );
@@ -83,8 +83,8 @@ It should round a the `num` variable to be 184. Use the appropiate math method.
 ( function() {
   "use strict";
 
-Math.floor(184.33);
 const num = 184.33;
+Math.floor(const num);
 
  console.log( "roundNum: ", roundNum );
  console.assert( roundNum == "184", "#5: Test failed. Check your math method and parameters. Return: " + roundNum )
@@ -122,6 +122,7 @@ Edit the following object using dot notation to 'add' the missing computer compo
     motherboard: "full",
     processor: "i-7",
     memory: "4GB",
+    computer.GPU = "nvidia"
   };
  //Add missing property here.
   console.log( "#10: computer", computer )
@@ -138,7 +139,12 @@ The following object is empty. Use bracket notation so that 'car' has two doors,
 ( function() {
   "use strict";
   var car = {};
-
+  car["doors"] = 2;
+  car["wheels"] = 4;
+  car["engine"] = true;
+  car["type"] = "sport";
+  car["engine-size"] = "v-8";
+  car["model"] = "mustang";
 //Add properties here.
 
   console.log( "#11: ", car )
@@ -165,7 +171,7 @@ The global variable should be 'prius'.
   var car = 'prius';
 
   function changeCar() {
-    car = 'beattle';
+     var car = 'beattle';
   }
   changeCar();
 
